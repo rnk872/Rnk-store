@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Monday to Sunday Mart</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2c3e50">
+
+</head>
+<body>
+
+<header>
+  <h1>🛒 Monday to Sunday Mart</h1>
+  <p>Your daily needs, all in one place</p>
+</header>
+
+<input type="text" id="searchInput" placeholder="Search products...">
+
+<div class="filters">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('snacks')">Snacks</button>
+  <button onclick="filterProducts('nuts')">Nuts</button>
+  <button onclick="filterProducts('biscuits')">Biscuits</button>
+  <button onclick="filterProducts('drinks')">Drinks</button>
+  <button onclick="filterProducts('ration')">Ration</button>
+</div>
+
+<div class="products" id="productList"></div>
+
+<div class="cart">
+  <h2>Cart</h2>
+  <ul id="cartItems"></ul>
+  <p>Total: ₹<span id="total">0</span></p>
+  <button onclick="orderWhatsApp()">Order on WhatsApp</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
